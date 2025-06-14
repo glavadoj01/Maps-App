@@ -6,7 +6,7 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 
 @Component({
   selector: 'app-fullscreen-map-page',
-  imports: [DecimalPipe, JsonPipe],
+  imports: [JsonPipe, DecimalPipe],
   templateUrl: './fullscreen-map-page.component.html',
   styles: `
     div {
@@ -51,7 +51,7 @@ export class FullscreenMapPageComponent implements AfterViewInit {
     const map = new maplibregl.Map({
       container: element, // container id
       style: 'https://demotiles.maplibre.org/style.json', // style URL
-      center: [lng, lat], // starting position [lng, lat]
+      center: [lng, lat],
       zoom: this.zoom()
     });
 

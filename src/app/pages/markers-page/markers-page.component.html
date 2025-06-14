@@ -1,6 +1,9 @@
-<div #mapa class="h-[calc(100vh-64px)]"></div>
+<div #mapa class="h-[70vh] sm:h-[calc(100vh-64px)]"></div>
 
-<section class="fixed w-260px bg-white rounded top-20 left-5 p-5 border border-gray-200 shadow-lg">
+<section
+  class="h-[calc(30vh-64px)] bg-white p-5 border border-gray-200 shadow-lg
+  sm:fixed sm:w-[260px] sm:rounded sm:top-20 sm:left-5 overflow-y-scroll"
+>
   <h2 class="text-xl font-bold text-black mb-2">Marcadores:</h2>
   <div class="flex flex-col gap-2">
     @for (marker of markers(); track marker.id) {

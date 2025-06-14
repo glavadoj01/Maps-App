@@ -57,4 +57,6 @@ export class HousesPageComponent {
       tags: ['Casa', 'Lago', 'Hacienda'],
     },
   ]);
+
+
 }
